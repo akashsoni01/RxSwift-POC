@@ -5,7 +5,7 @@ https://drive.google.com/file/d/1ammtfc80Wd-MKY7bi49OfAGiq0RR4NUs/view?usp=shari
 # Udemy Table Of Content 
 
 Course content
-Section 1: Introduction
+# Section 1: Introduction
 Lecture completed
 1. Welcome
 Lecture completed
@@ -13,14 +13,14 @@ Lecture completed
 Lecture completed
 3. Using the exercise files
 Resources
-Section 2: Reactive Programming Concepts
+# Section 2: Reactive Programming Concepts
 Lecture completed
 4. What is reactive programming?
 Lecture completed
 5. What are Reactive Extensions?
 Lecture completed
 6. Using marble diagrams
-Section 3: Reactive Extensions for Swift
+# Section 3: Reactive Extensions for Swift
 Lecture completed
 7. Creating and subscribing to Observable sequences
 Lecture completed
@@ -53,7 +53,7 @@ Lecture completed
 21. Understanding schedulers
 Lecture completed
 22. Using schedulers
-Section 4: Reactive Extensions for Cocoa Touch
+# Section 4: Reactive Extensions for Cocoa Touch
 Lecture completed
 23. Understanding RxCocoa traits
 Lecture completed
@@ -64,7 +64,7 @@ Lecture completed
 26. Binding table views
 Lecture completed
 27. Binding collection views
-Section 5: Taking Things Further
+# Section 5: Taking Things Further
 Lecture completed
 28. Using forward delegates
 Lecture completed
@@ -77,6 +77,6 @@ Lecture completed
 32. Testing
 Lecture completed
 33. Networking
-Section 6: Conclusion
+# Section 6: Conclusion
 Lecture completed
 34. Wrapping up and next steps
