@@ -1,0 +1,7 @@
+target 'Use Forward Delegates' do
+    use_frameworks!
+    
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+end

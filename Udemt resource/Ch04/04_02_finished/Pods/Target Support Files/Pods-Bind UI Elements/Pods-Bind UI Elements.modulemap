@@ -1,0 +1,6 @@
+framework module Pods_Bind_UI_Elements {
+  umbrella header "Pods-Bind UI Elements-umbrella.h"
+
+  export *
+  module * { export * }
+}

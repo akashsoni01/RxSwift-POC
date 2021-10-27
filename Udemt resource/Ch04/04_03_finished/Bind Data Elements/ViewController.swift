@@ -1,0 +1,63 @@
+/*
+ Copyright © 2017 Optimac, Inc. All rights reserved.
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ */
+
+import UIKit
+import RxSwift
+import RxCocoa
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var tapGestureRecognizer: UITapGestureRecognizer!
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var button: Button!
+    
+    let disposeBag = DisposeBag()
+    let textFieldText = Variable("")
+    let buttonTapped = PublishSubject<String>()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tapGestureRecognizer.rx.event
+            .bind { [unowned self] _ in
+                self.view.endEditing(true)
+            }
+            .disposed(by: disposeBag)
+        
+        textField.rx.text.orEmpty
+            .bind(to: textFieldText)
+            .disposed(by: disposeBag)
+        
+        textFieldText.asObservable()
+            .subscribe { print($0) }
+            .disposed(by: disposeBag)
+        
+        button.rx.tap
+            .map { "Tapped!" }
+            .bind(to: buttonTapped)
+            .disposed(by: disposeBag)
+        
+        buttonTapped
+            .subscribe { print($0.element ?? $0) }
+            .disposed(by: disposeBag)
+    }
+}

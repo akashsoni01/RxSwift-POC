@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eiK-mT-X0j">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6kN-GC-r9P">
+            <objects>
+                <viewController id="eiK-mT-X0j" customClass="ViewController" customModule="Bind_UI_Elements" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xmu-SD-8Aw"/>
+                        <viewControllerLayoutGuide type="bottom" id="qPV-IO-5ap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y4p-4I-RKs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LEN-kx-66V">
+                                <rect key="frame" x="20" y="28" width="374" height="650"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-yC-to8">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="92"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="teU-TR-PzP">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="62"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text field" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aTI-GP-rOs">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfX-Gr-r6K">
+                                                        <rect key="frame" x="0.0" y="38" width="183" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="EXK-Ms-tPf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IvL-xT-BRg">
+                                                <rect key="frame" x="191" y="0.0" width="183" height="92"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Text view" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lcY-oN-8eQ" customClass="TextView" customModule="Bind_UI_Elements" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="XJY-KD-f4h"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kks-KS-nK3">
+                                                        <rect key="frame" x="0.0" y="68" width="183" height="24"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="Mqf-Wt-0b3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxL-Te-Aaq" customClass="Button" customModule="Bind_UI_Elements" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="104" width="374" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Tap Me">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gko-qC-yYk">
+                                        <rect key="frame" x="0.0" y="146" width="374" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="M6K-b7-Zuh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="roG-iU-qzt">
+                                        <rect key="frame" x="0.0" y="182" width="374" height="29"/>
+                                        <segments>
+                                            <segment title="First"/>
+                                            <segment title="Second"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n60-3f-jkZ">
+                                        <rect key="frame" x="0.0" y="222" width="374" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="OKE-LD-QDh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XjX-EY-wfY">
+                                        <rect key="frame" x="-2" y="258" width="378" height="31"/>
+                                    </slider>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-cx-Xs2">
+                                        <rect key="frame" x="0.0" y="300" width="374" height="2"/>
+                                    </progressView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rHu-HA-a4I">
+                                        <rect key="frame" x="0.0" y="314" width="374" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WF6-v1-Njt">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rKl-Ce-drZ">
+                                                <rect key="frame" x="354" y="5.6666666666666856" width="20" height="20"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bIx-zg-iwU">
+                                        <rect key="frame" x="0.0" y="357" width="374" height="29"/>
+                                        <subviews>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-100" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ewS-ZM-IUk">
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
+                                            </stepper>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fn-zC-icu">
+                                                <rect key="frame" x="102" y="2.6666666666666856" width="272" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" placeholder="YES" id="43D-9n-aln"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nyF-tW-w5b">
+                                        <rect key="frame" x="0.0" y="398" width="374" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="478973443.75538999">
+                                            <!--2016-03-06 16:10:43 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLZ-ik-Ujz">
+                                        <rect key="frame" x="0.0" y="626" width="374" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="dgk-yC-IaP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LEN-kx-66V" firstAttribute="leading" secondItem="Y4p-4I-RKs" secondAttribute="leadingMargin" id="88X-Bl-rPb"/>
+                            <constraint firstItem="LEN-kx-66V" firstAttribute="top" secondItem="xmu-SD-8Aw" secondAttribute="bottom" constant="8" symbolic="YES" id="fIJ-vH-Jfl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LEN-kx-66V" secondAttribute="trailing" id="xJQ-wT-Zpk"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="IkI-vD-Oc5" appends="YES" id="jgP-rg-NDy"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="aSwitch" destination="WF6-v1-Njt" id="D1W-tY-9RM"/>
+                        <outlet property="activityIndicator" destination="rKl-Ce-drZ" id="Kv5-6j-sWr"/>
+                        <outlet property="button" destination="pxL-Te-Aaq" id="Bmh-tu-hgT"/>
+                        <outlet property="buttonLabel" destination="Gko-qC-yYk" id="Xon-FP-qHt"/>
+                        <outlet property="datePicker" destination="nyF-tW-w5b" id="GLl-Z0-Sb6"/>
+                        <outlet property="datePickerLabel" destination="NLZ-ik-Ujz" id="A56-ka-yFI"/>
+                        <outlet property="progressView" destination="M5O-cx-Xs2" id="D4Y-f8-5HU"/>
+                        <outlet property="segmentedControl" destination="roG-iU-qzt" id="5y3-JS-zBW"/>
+                        <outlet property="segmentedControlLabel" destination="n60-3f-jkZ" id="ySe-PW-U9h"/>
+                        <outlet property="slider" destination="XjX-EY-wfY" id="k7F-Ig-HGS"/>
+                        <outlet property="stepper" destination="ewS-ZM-IUk" id="i4W-OS-odk"/>
+                        <outlet property="stepperLabel" destination="1Fn-zC-icu" id="zFK-gK-5LQ"/>
+                        <outlet property="tapGestureRecognizer" destination="IkI-vD-Oc5" id="4S9-zE-qmK"/>
+                        <outlet property="textField" destination="aTI-GP-rOs" id="vRd-c1-x55"/>
+                        <outlet property="textFieldLabel" destination="RfX-Gr-r6K" id="54b-J0-dYT"/>
+                        <outlet property="textView" destination="lcY-oN-8eQ" id="0GH-Zu-TqT"/>
+                        <outlet property="textViewLabel" destination="kks-KS-nK3" id="b8z-id-hmr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fU4-lh-Ild" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="IkI-vD-Oc5"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="139"/>
+        </scene>
+    </scenes>
+</document>

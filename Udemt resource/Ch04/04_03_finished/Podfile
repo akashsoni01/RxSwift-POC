@@ -1,0 +1,6 @@
+target 'Bind Data Elements' do
+use_frameworks!
+
+pod 'RxSwift'
+pod 'RxCocoa'
+end

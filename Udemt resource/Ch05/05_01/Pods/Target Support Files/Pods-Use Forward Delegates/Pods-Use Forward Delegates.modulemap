@@ -1,0 +1,6 @@
+framework module Pods_Use_Forward_Delegates {
+  umbrella header "Pods-Use Forward Delegates-umbrella.h"
+
+  export *
+  module * { export * }
+}
